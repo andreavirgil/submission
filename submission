@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shadows House</title>
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap"
+
+      rel="stylesheet"
+
+    />
+
+    <style>
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+/* body */
+
+body {
+
+  background-color: ivory;
+
+  color: black;
+
+  font-family: "Noto Sans JP", sans-serif;
+
+}
+
+
+
+header {
+
+  display: inline;
+
+}
+
+
+
+/* Hero */
+
+.img-comp-container {
+
+  position: relative;
+
+  height: 200px;
+
+}
+
+
+
+.img-comp-img {
+
+  position: absolute;
+
+  width: auto;
+
+  height: auto;
+
+  overflow: hidden;
+
+}
+
+
+
+.img-comp-img img {
+
+  display: block;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.img-comp-slider {
+
+  position: absolute;
+
+  z-index: 9;
+
+  cursor: ew-resize;
+
+  /*set the appearance of the slider:*/
+
+  width: 40px;
+
+  height: 40px;
+
+  background-color: #ffb000;
+
+  opacity: 0.7;
+
+  border-radius: 50%;
+
+}
+
+
+
+/* Navbar */
+
+nav {
+
+  background-color: #004225;
+
+  padding: 5px;
+
+  position: sticky;
+
+  top: 0;
+
+  margin-top: 325px;
+
+}
+
+
+
+nav ul {
+
+  padding-inline: 4rem;
+
+  display: flex;
+
+  gap: 2rem;
+
+}
+
+
+
+nav li {
+
+  list-style-type: none;
+
+}
+
+
+
+nav a {
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  text-decoration: none;
+
+  color: white;
+
+}
+
+
+
+nav a:hover {
+
+  font-size: 17px;
+
+  color: #ffb000;
+
+  text-decoration: underline;
+
+}
+
+
+
+/* Main */
+
+main {
+
+  margin-top: 0.5px;
+
+  padding: 20px;
+
+  display: flex;
+
+  gap: 1.5rem;
+
+}
+
+
+
+#content {
+
+  flex: 5;
+
+
+
+  display: flex;
+
+  flex-flow: column nowrap;
+
+  gap: 1rem 2rem;
+
+}
+
+
+
+h1 {
+
+  text-align: center;
+
+  font-size: 600;
+
+}
+
+
+
+h2 {
+
+  color: black;
+
+}
+
+
+
+.profile header {
+
+  text-align: center;
+
+}
+
+
+
+.card {
+
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+
+  border-radius: 5px;
+
+  padding: 20px;
+
+}
+
+
+
+/* Aside */
+
+aside {
+
+  flex: 1;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+  padding: 20px;
+
+  color: #fff;
+
+  background-color: #004225;
+
+  text-align: center;
+
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 1200px) {
+
+  main {
+
+    flex-flow: column nowrap;
+
+  }
+
+
+
+  main aside {
+
+    align-self: center;
+
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  nav ul {
+
+    justify-content: center;
+
+  }
+
+
+
+  .nav {
+
+    padding-top: none;
+
+  }
+
+
+
+  nav ul {
+
+    justify-content: center;
+
+  }
+
+
+
+  .navbar {
+
+    padding-top: none;
+
+  }
+
+
+
+  main aside {
+
+    align-self: stretch;
+
+  }
+
+
+
+  .img-comp-container {
+
+    max-width: 100%;
+
+    height: auto;
+
+    position: relative;
+
+    padding-bottom: 10px;
+
+  }
+
+
+
+  .img-comp-img img {
+
+    width: 100%;
+
+    height: auto;
+
+  }
+
+
+
+  .img-comp-overlay img {
+
+    width: 100%;
+
+    height: auto;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+  <body>
+
+    <!-- Header Start-->
+
+    <header>
+
+       <!-- Hero Start -->
+
+       <div class="img-comp-container">
+
+        <div class="img-comp-img">
+
+          <img src="asset/hero1.png" />
+
+        </div>
+
+        <div class="img-comp-img img-comp-overlay">
+
+          <img src="asset/hero2.png" />
+
+        </div>
+
+      </div>
+
+      <!-- Hero End -->
+
+
+
+      <!-- Navbar Start -->
+
+      <div class="navbar">
+
+      <nav>
+
+        <ul>
+
+          <li><a href="index.html">Beranda</a></li>
+
+          <li><a href="animemanga.html">Anime/Manga</a></li>
+
+          <li><a href="karakter.html">Karakter</a></li>
+
+        </ul>
+
+      </nav>
+
+      </div>
+
+      <!-- Navbar End -->
+
+    </header>
+
+    <!-- Header End -->
+
+
+
+    <!-- Main Start -->
+
+    <main>
+
+      <!-- Article Start-->
+
+      <div id="content">
+
+        <article class="card">
+
+          <h1>Shadows House</h1>
+
+        </article>
+
+        <article class="card">
+
+          <h2>Tentang</h2>
+
+          <p>
+
+            Shadows House (シャドーハウス) adalah seri manga Jepang yang ditulis
+
+            dan diilustrasikan oleh duo<a
+
+              href="https://shadows-house.fandom.com/wiki/So-ma-to"
+
+            >
+
+              So-ma-to</a
+
+            >. Seri manga ini diserialisasikan di majalah
+
+            <a
+
+              href="https://id.wikipedia.org/wiki/Weekly_Young_Jump#:~:text=Weekly%20Young%20Jump%20(%E9%80%B1%E5%88%8A%E3%83%A4%E3%83%B3%E3%82%B0,di%20bawah%20garis%20majalah%20Jump."
+
+              >Weekly Young Jump</a
+
+            >
+
+            milik
+
+            <a href="https://id.wikipedia.org/wiki/Shueisha">Shueisha</a> sejak
+
+            September 2018, telah dikumpulkan dalam lima belas volume tankōbon
+
+            sampai dengan Oktober 2023. Sebuah adaptasi anime televisi oleh
+
+            <a href="https://en.wikipedia.org/wiki/CloverWorks">CloverWorks</a>
+
+            ditayangkan dari April hingga Juli 2021. Musim kedua tayang dari
+
+            Juli hingga September 2022.
+
+          </p>
+
+        </article>
+
+        <article class="card">
+
+          <h2>Sinopsis</h2>
+
+          <p>
+
+            Shadows House berlatar cerita tentang sebuah mansion mewah di atas
+
+            tebing yang tinggi nan terpencil yang dikenal sebagai Shadow House,
+
+            tempat bagi klan tak berwajah yang berpura-pura hidup seperti
+
+            bangsawan. Mereka mengekspresikan emosi mereka melalui boneka hidup
+
+            yang juga bertugas untuk membersihkan rumah dari jelaga yang tanpa
+
+            henti dikeluarkan dari dalam diri mereka. Bercerita tentang Emilico,
+
+            seorang boneka hidup muda dan ceria yang dengan senang hati mulai
+
+            melayani nyonyanya, Kate. Disaat hubungan mereka semakin dekat,
+
+            perlahan-lahan mulai bermunculan peristiwa di dalam mansion
+
+            tersebut, dan mereka mulai menemukan sejumlah rahasia kelam di
+
+            dalamnya.
+
+          </p>
+
+        </article>
+
+      </div>
+
+      <!-- Article End -->
+
+
+
+      <!--Aside Start -->
+
+      <article class="card profile">
+
+        <header>
+
+          <h2>Tentang Penulis</h2>
+
+          <figure>
+
+            <img src="asset/andrea.jpg" alt="andrea" width="170px" />
+
+          </figure>
+
+        </header>
+
+        <section align="center">
+
+          <p><strong>Andrea Virgil Ofian</p>
+
+          <table align="center">
+
+            <tr>
+
+              <th>TTL: </th> 
+
+              <td> Tangerang,<br />13 Maret 2006</td>
+
+            </tr>
+
+            <tr>
+
+              <th>Alamat: </th>
+
+              <td> Serang, Banten</td>
+
+            </tr>
+
+          </table>
+
+          <br />
+
+          <a href="https://instagram.com/andrea_avo89?igshid=OGQ5ZDc2ODk2ZA=="
+
+            ><i
+
+              class="fa fa-instagram"
+
+              style="font-size: 36px"
+
+              align="center"
+
+            ></i
+
+          ></a>
+
+        </section>
+
+      </article>
+
+      <!-- Aside End -->
+
+    </main>
+
+    <!-- Main End -->
+
+
+
+    <!-- Footer Start -->
+
+    <footer>
+
+      <div class="footer">
+
+        <p>Shadows House &#169; 2023, Andrea Virgil Ofian</p>
+
+      </div>
+
+    </footer>
+
+    <!-- Footer End -->
+
+
+
+    <!-- My Javascript -->
+
+    <script>// Hero //
+
+function initComparisons() {
+
+  var x, i;
+
+  /*find all elements with an "overlay" class:*/
+
+  x = document.getElementsByClassName("img-comp-overlay");
+
+  for (i = 0; i < x.length; i++) {
+
+    /*once for each "overlay" element:
+
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+
+    compareImages(x[i]);
+
+  }
+
+  function compareImages(img) {
+
+    var slider,
+
+      img,
+
+      clicked = 0,
+
+      w,
+
+      h;
+
+    /*get the width and height of the img element*/
+
+    w = img.offsetWidth;
+
+    h = img.offsetHeight;
+
+    /*set the width of the img element to 50%:*/
+
+    img.style.width = w / 2 + "px";
+
+    /*create slider:*/
+
+    slider = document.createElement("DIV");
+
+    slider.setAttribute("class", "img-comp-slider");
+
+    /*insert slider*/
+
+    img.parentElement.insertBefore(slider, img);
+
+    /*position the slider in the middle:*/
+
+    slider.style.top = h / 2 - slider.offsetHeight / 2 + "px";
+
+    slider.style.left = w / 2 - slider.offsetWidth / 2 + "px";
+
+    /*execute a function when the mouse button is pressed:*/
+
+    slider.addEventListener("mousedown", slideReady);
+
+    /*and another function when the mouse button is released:*/
+
+    window.addEventListener("mouseup", slideFinish);
+
+    /*or touched (for touch screens:*/
+
+    slider.addEventListener("touchstart", slideReady);
+
+    /*and released (for touch screens:*/
+
+    window.addEventListener("touchend", slideFinish);
+
+    function slideReady(e) {
+
+      /*prevent any other actions that may occur when moving over the image:*/
+
+      e.preventDefault();
+
+      /*the slider is now clicked and ready to move:*/
+
+      clicked = 1;
+
+      /*execute a function when the slider is moved:*/
+
+      window.addEventListener("mousemove", slideMove);
+
+      window.addEventListener("touchmove", slideMove);
+
+    }
+
+    function slideFinish() {
+
+      /*the slider is no longer clicked:*/
+
+      clicked = 0;
+
+    }
+
+    function slideMove(e) {
+
+      var pos;
+
+      /*if the slider is no longer clicked, exit this function:*/
+
+      if (clicked == 0) return false;
+
+      /*get the cursor's x position:*/
+
+      pos = getCursorPos(e);
+
+      /*prevent the slider from being positioned outside the image:*/
+
+      if (pos < 0) pos = 0;
+
+      if (pos > w) pos = w;
+
+      /*execute a function that will resize the overlay image according to the cursor:*/
+
+      slide(pos);
+
+    }
+
+    function getCursorPos(e) {
+
+      var a,
+
+        x = 0;
+
+      e = e.changedTouches ? e.changedTouches[0] : e;
+
+      /*get the x positions of the image:*/
+
+      a = img.getBoundingClientRect();
+
+      /*calculate the cursor's x coordinate, relative to the image:*/
+
+      x = e.pageX - a.left;
+
+      /*consider any page scrolling:*/
+
+      x = x - window.pageXOffset;
+
+      return x;
+
+    }
+
+    function slide(x) {
+
+      /*resize the image:*/
+
+      img.style.width = x + "px";
+
+      /*position the slider:*/
+
+      slider.style.left = img.offsetWidth - slider.offsetWidth / 2 + "px";
+
+    }
+
+  }
+
+}
+
+
+
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+
+initComparisons();
+
+
+
+// Scroll //
+
+// When the user scrolls the page, execute myFunction
+
+window.onscroll = function () {
+
+  myFunction();
+
+};
+
+
+
+function myFunction() {
+
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+  var height =
+
+    document.documentElement.scrollHeight -
+
+    document.documentElement.clientHeight;
+
+  var scrolled = (winScroll / height) * 100;
+
+  document.getElementById("myBar").style.width = scrolled + "%";
+
+}
+
+</script>
+
+  </body>
+
+</html>
